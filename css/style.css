@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300');
+
+@font-face {
+    font-family: bebas;
+    src: url('../assets/BEBAS.ttf');
+}
+
+body {
+    /*margin: 0;*/
+    padding-top: 4em;
+    background-color: #A08AFB;
+    color: #F2F2F2;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+a {
+    color: #B8ECFE;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #9076FB;
+    text-align: right;
+    z-index: 1000;
+}
+
+nav > #nav-links a {
+    padding: 1em;
+    display: inline-block;
+    font-family: bebas;
+    /*height: 100%;*/
+}
+
+h1, h2, h3, a.button {
+    font-family: bebas;
+}
+
+nav > #nav-links a:last-of-type {
+    /*margin-right: 1em;*/
+}
+
+section {
+    min-height: 100%;
+}
+
+#splash {
+    text-align: center;
+}
+
+.splash-img {
+    /*game: strong;*/
+    height: 30%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+a.button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: 0.2s all;
+    border: solid white 2px;
+    padding: 0.5em 1em;
+    color: white;
+    margin: 1em;
+    z-index: 100;
+    border-radius: 0.25em;
+}
+
+#splash a.button {
+    font-size: 1.25em;
+}
+
+a.button::before, a.button::after {
+    content: "";
+    position: absolute;
+    transition: 0.2s all;
+    z-index: -1;
+}
+
+a.button:hover {
+    color: #9076FB;
+}
+
+/** Simple slide in from left with circle */
+a.button::before {
+    left: -200%;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    border-radius: 0% 50% 50% 00%;
+    background-color: white;
+}
+
+a.button:hover::before {
+    left: 0%;
+}
+
+a.button::after {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #B19FF6;
+    z-index: -100;
+}
+
+nav > #nav-links a.button {
+    margin: 0;
+    vertical-align: middle;
+    margin-right: 1em;
+    padding: 0.5em;
+    color: #B8ECFE;
+}
+
+#logo {
+    width: 5%;
+    position: absolute;
+    left: 1em;
+    top: 0.5em;
+}
+
+#schedule img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+}
