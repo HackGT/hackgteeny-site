@@ -124,10 +124,53 @@ nav > #nav-links a.button {
     position: absolute;
     left: 1em;
     top: 0.5em;
+    transition: 0.25s all;
+}
+
+#logo:hover {
+    transform: rotate(15deg) scale(1.1);
 }
 
 #schedule img {
     max-width: 80%;
     margin: 0 auto;
     display: block;
+}
+
+.social {
+    text-align: center;
+}
+
+.social > a {
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+    vertical-align: middle;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    color: #fff !important;
+    border-radius: 50%;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.social > a > i {
+    font-size: 16px;
+    width: 22px;
+    line-height: 40px;
+}
+.social > a.twitter {
+    background: #55acee;
+}
+.social > a.facebook {
+    background: #3b5998;
+}
+.social > a.email {
+    background: #ed77d8;
+}
+.social > a.github {
+    background: #333;
+    border: 1px solid #999;
 }
