@@ -196,3 +196,7 @@ nav > #nav-links a.button {
         transition: 0.25s all;
     }
 }
+
+#faqs {
+    min-height: auto;
+}
