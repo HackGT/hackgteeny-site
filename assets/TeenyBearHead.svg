@@ -7,11 +7,109 @@
 	.st1{fill:#86DDFD;}
 	.st2{fill:#9DE9FE;}
 	.st3{clip-path:url(#SVGID_2_);fill:#B8ECFE;}
-	.st4{fill:#1174BA;}
-	.st5{fill:#93C3E6;}
 	.st6{fill:none;stroke:#1174BA;stroke-width:6;stroke-miterlimit:10;}
 	.st7{fill:#666666;}
-	.st8{fill:none;stroke:#666666;stroke-width:6;stroke-miterlimit:10;}
+
+	@keyframes brows {
+	    0% {
+	    	transform: translate(0px, 0px);
+	    }
+	    25% {
+	    	transform: translate(0px, 0px);
+	    }
+	    35% {
+	    	transform: translate(0px, -50px);
+	    }
+	    45% {
+	    	transform: translate(0px, 0px);
+	    }
+	    55% {
+	    	transform: translate(0px, -25px);
+	    }
+	    65% {
+	    	transform: translate(0px, 0px);
+	    }
+	    100% {
+	    	transform: translate(0px, 0px);
+	    }
+	}
+
+	@keyframes big-nose-wiggle {
+	    0% {
+	    	transform: translate(0px, 0px);
+	    }
+	    25% {
+	    	transform: translate(0px, 0px);
+	    }
+	    30% {
+	    	transform: translate(-6px, 0px);
+	    }
+	    35% {
+	    	transform: translate(6px, 0px);
+	    }
+	    40% {
+	    	transform: translate(-3px, 0px);
+	    }
+	    45% {
+	    	transform: translate(0px, 0px);
+	    }
+	    100% {
+	    	transform: translate(0px, 0px);
+	    }
+	}
+
+	@keyframes small-nose-wiggle {
+	    0% {
+	    	transform: translate(0px, 0px);
+	    }
+	    25% {
+	    	transform: translate(0px, 0px);
+	    }
+	    30% {
+	    	transform: translate(-5px, 0px);
+	    }
+	    35% {
+	    	transform: translate(5px, 0px);
+	    }
+	    40% {
+	    	transform: translate(-2.5px, 0px);
+	    }
+	    45% {
+	    	transform: translate(0px, 0px);
+	    }
+	    100% {
+	    	transform: translate(0px, 0px);
+	    }
+	}
+
+	.st4{
+		fill:#1174BA;
+		animation-name: big-nose-wiggle;
+		animation-duration: 3s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	#nose-reflection {
+		animation-name: small-nose-wiggle;
+		animation-duration: 3s;
+		animation-delay: 1s;
+		animation-iteration-count: infinite;
+	}
+
+	.st5{
+		fill:#93C3E6;
+	}
+
+	.st8{
+		fill:none;
+		stroke:#666666;
+		stroke-width:6;
+		stroke-miterlimit:10;
+		animation-name: brows;
+		animation-duration: 2.5s;
+		animation-iteration-count: infinite;
+	}
 </style>
 <path class="st0" d="M965.3,784.1c-30.9,37-83.7,55.8-162.7,99.1C664.2,959,533,953.7,452.2,950.4c-72.4-2.9-189.4-9-311.4-81.4
 	c-47.3-28-82.4-58.3-106.1-81.4c3.5-42.5,7.1-85,10.6-127.4c16.5-82.8,33-165.7,49.6-248.4c1.4-6.8,2.7-13.6,4.1-20.4
@@ -41,7 +139,9 @@
 		c0.1,0,0.3,0.1,0.4,0.1c15.1,4,31.3,9.3,48.2,16.3C631.7,619.3,654.2,633,671.1,645z"/>
 </g>
 <ellipse class="st4" cx="500" cy="636.4" rx="56.5" ry="27.6"/>
+<g id="nose-reflection">
 <ellipse transform="matrix(0.2919 -0.9564 0.9564 0.2919 -226.3897 947.7527)" class="st5" cx="526.9" cy="626.8" rx="6.4" ry="13.4"/>
+</g>
 <path class="st6" d="M435.6,735.3c20.4,24,32.2,30.6,64.4,30.6"/>
 <path class="st6" d="M564.4,735.3c-20.4,24-32.2,30.6-64.4,30.6"/>
 <line class="st6" x1="425.5" y1="745.3" x2="445.6" y2="725.2"/>
