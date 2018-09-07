@@ -208,3 +208,7 @@ nav > #nav-links a.button {
 #faqs {
     min-height: 80vh;
 }
+
+table {
+    min-width: 60%;
+}
