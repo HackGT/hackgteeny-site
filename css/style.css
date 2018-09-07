@@ -35,8 +35,16 @@ nav > #nav-links a {
     /*height: 100%;*/
 }
 
-h1, h2, h3, a.button {
+h1, h2, h3, h4, a.button {
     font-family: bebas;
+}
+
+h4 {
+    background-color: #F2F2F2;
+    display: inline-block;
+    color: #A08AFB;
+    padding: 0.5em;
+    margin: 0;
 }
 
 nav > #nav-links a:last-of-type {
@@ -198,5 +206,5 @@ nav > #nav-links a.button {
 }
 
 #faqs {
-    min-height: auto;
+    min-height: 80vh;
 }
