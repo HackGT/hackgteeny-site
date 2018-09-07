@@ -243,3 +243,8 @@ nav > #nav-links a.button {
 table {
     min-width: 60%;
 }
+
+.map {
+    margin-top: 3.5em;
+    margin-left: 1em;
+}
