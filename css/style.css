@@ -52,10 +52,6 @@ h4 {
     margin: 0;
 }
 
-nav > #nav-links a:last-of-type {
-    /*margin-right: 1em;*/
-}
-
 section {
     min-height: calc(100vh - 6em);
 }
@@ -126,6 +122,10 @@ a.button::after {
     height: 100%;
     background-color: #B19FF6;
     z-index: -100;
+}
+
+#nav-links > div {
+    display: inline;
 }
 
 nav > #nav-links a.button {
@@ -217,6 +217,18 @@ nav > #nav-links a.button {
 
     nav {
         text-align: center;
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #logo {
+        display: none;
+    }
+
+    nav {
+        text-align: center;
+        font-size: 0.8em;
     }
 }
 
