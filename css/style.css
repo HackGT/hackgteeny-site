@@ -11,6 +11,11 @@ body {
     background-color: #A08AFB;
     color: #F2F2F2;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.15em;
+}
+
+tbody {
+    font-size: 1.15em;
 }
 
 a {
@@ -197,7 +202,7 @@ nav > #nav-links a.button {
 
 @media only screen and (max-width: 840px) {
     #logo {
-        width: 10%;
+        width: 12%;
         position: absolute;
         left: 1em;
         top: 0.5em;
@@ -205,8 +210,34 @@ nav > #nav-links a.button {
     }
 }
 
+@media only screen and (max-width: 460px) {
+    #logo {
+        display: none;
+    }
+
+    nav {
+        text-align: center;
+    }
+}
+
 #faqs {
     min-height: 80vh;
+}
+
+#faqs li {
+    position: relative;
+    list-style: none;
+}
+
+#faqs li::before {
+    content: "";
+    background-image: url('../assets/TeenyBullet3.svg');
+    height: 1em;
+    width: 1em;
+    background-size: 1em;
+    position: absolute;
+    left: -1.25em;
+    top: 0.3em;
 }
 
 table {
