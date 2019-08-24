@@ -8,14 +8,19 @@
 body {
     /*margin: 0;*/
     /*margin-top: 4em !important;*/
-    background-color: #A08AFB;
-    color: #F2F2F2;
+    background-color: #917baf;
+    color: white;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 1.15em;
+    font-size: 1.3em;
+    font-weight: 700;
 }
 
 tbody {
-    font-size: 1.15em;
+    background-color: #917baf;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
 }
 
 a {
@@ -28,7 +33,8 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #9076FB;
+    background-color: #634d77;
+    color: white;
     text-align: right;
     z-index: 1000;
 }
@@ -98,7 +104,7 @@ a.button::before, a.button::after {
 }
 
 a.button:hover {
-    color: #9076FB;
+    color: #634d77; /*dark purple*/
 }
 
 /** Simple slide in from left with circle */
@@ -120,7 +126,7 @@ a.button::after {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #B19FF6;
+    background-color: #634d77;
     z-index: -100;
 }
 
@@ -133,7 +139,7 @@ nav > #nav-links a.button {
     vertical-align: middle;
     margin-right: 1em;
     padding: 0.5em;
-    color: #B8ECFE;
+    color: #B8ECFE; /*blue text color*/
 }
 
 #logo {
@@ -185,7 +191,8 @@ nav > #nav-links a.button {
     background: #3b5998;
 }
 .social > a.email {
-    background: #ed77d8;
+    /*background: #ed77d8;*/
+    background: #2787e6;
 }
 .social > a.github {
     background: #333;
