@@ -5,10 +5,17 @@
     src: url('../assets/BEBAS.ttf');
 }
 
+:root {
+
+
+}
 body {
     /*margin: 0;*/
     /*margin-top: 4em !important;*/
-    background-color: #917baf;
+    --primary-color: #917baf; /*light purple*/
+    --secondary-color: #634d77; /*dark purple*/
+    --emphasis-color: #B8ECFE; /*light blue*/
+    background-color: var(--primary-color);
     color: white;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 1.3em;
@@ -16,7 +23,7 @@ body {
 }
 
 tbody {
-    background-color: #917baf;
+    background-color: var(--primary-color);
     color: white;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 1.3em;
@@ -24,7 +31,7 @@ tbody {
 }
 
 a {
-    color: #B8ECFE;
+    color: var(--emphasis-color);
     text-decoration: none;
 }
 
@@ -33,7 +40,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #634d77;
+    background-color: var(--secondary-color);
     color: white;
     text-align: right;
     z-index: 1000;
@@ -53,7 +60,7 @@ h1, h2, h3, h4, a.button {
 h4 {
     background-color: #F2F2F2;
     display: inline-block;
-    color: #A08AFB;
+    color: var(--primary-color);
     padding: 0.5em;
     margin: 0;
 }
@@ -104,7 +111,7 @@ a.button::before, a.button::after {
 }
 
 a.button:hover {
-    color: #634d77; /*dark purple*/
+    color: var(--secondary-color);
 }
 
 /** Simple slide in from left with circle */
@@ -126,7 +133,7 @@ a.button::after {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: #634d77;
+    background-color: var(--secondary-color);
     z-index: -100;
 }
 
@@ -139,7 +146,7 @@ nav > #nav-links a.button {
     vertical-align: middle;
     margin-right: 1em;
     padding: 0.5em;
-    color: #B8ECFE; /*blue text color*/
+    color: var(--emphasis-color);
 }
 
 #logo {
