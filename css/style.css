@@ -50,6 +50,10 @@ h1, h2, h3, h4, a.button {
     font-family: bebas;
 }
 
+h1, h2 {
+    word-spacing: .2em;
+}
+
 h4 {
     background-color: #F2F2F2;
     display: inline-block;
@@ -215,6 +219,9 @@ nav > #nav-links a.button {
         top: 0.5em;
         transition: 0.25s all;
     }
+    .map {
+        margin: 0;
+    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -264,6 +271,7 @@ table {
 }
 
 .map {
-    margin-top: 3.5em;
-    margin-left: 1em;
+    margin: 3.5em 1em 0;
+    /* margin-top: 3.5em; */
+    /* margin-left: 1em; */
 }
