@@ -274,3 +274,6 @@ table {
     min-width: 60%;
 }
 
+td {
+    vertical-align: top;
+}
